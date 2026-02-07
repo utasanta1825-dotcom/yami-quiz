@@ -1,16 +1,8 @@
-import { supabase } from "./lib/supabase";
-
-export default async function Home() {
-  const { data: questions, error } = await supabase
-    .from("questions")
-    .select("*");
-
+export default function Home() {
   return (
     <main style={{ padding: 24 }}>
-      <h1>闇クイズ</h1>
-
-      <h2>debug</h2>
-      <pre>{JSON.stringify({ error, questions }, null, 2)}</pre>
+      <h1>Hello</h1>
+      <p>GitHubは元に戻しました。</p>
     </main>
   );
 }
